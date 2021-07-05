@@ -256,9 +256,6 @@ def update_local_uin(core, msg):
         else:
             logger.debug('Wrong length of uins & usernames: %s, %s' % (
                 len(uins), len(usernames)))
-    else:
-        logger.debug('No uins in 51 message')
-        logger.debug(msg['Content'])
     return r
 
 def get_contact(self, update=False):
